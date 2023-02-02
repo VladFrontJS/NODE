@@ -48,7 +48,7 @@ const start = () => {
             return startGame(chatId);
         }
 
-        if (data === chats[chatId]) {
+        if (data == chats[chatId]) {
             return bot.sendMessage(chatId, `Congratulations, you guessed the number ${chats[chatId]}`, againOptions);
         } else {
             return bot.sendMessage(chatId, `Unfortunately, you did not guess correctly, the bot guessed the number ${chats[chatId]}`, againOptions);
